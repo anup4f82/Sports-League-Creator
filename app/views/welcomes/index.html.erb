@@ -1,0 +1,10 @@
+<h2> Pick your sport </h2>
+
+<%= form_tag("/welcomes",method: "post") do %>
+<%= select_tag(:sports,options_for_select([['Tennis',"tennis"],['Cricket',"cricket"],['Basketball',"basketball"],['Football',"football"]])) %>
+<%= submit_tag("Play") %>
+<% end %>
+
+
+
+

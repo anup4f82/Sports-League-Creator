@@ -1,0 +1,26 @@
+<h1>Sign up for <%= @user.sport %> </h1>
+
+<ul>
+<%= form_for @user do |u| %>
+<li>
+<%= u.label :name %>
+<%= u.text_field :name %>
+</li>
+<li>
+<%= u.label :email %>
+<%= u.text_field :email %>
+</li>
+<li>
+<%= u.label :phone %>
+<%= u.text_field :phone %>
+</li>
+<li>
+<%= u.hidden_field :sport, :value => @user.sport %>
+
+</li>
+
+
+<li>
+<%= u.submit  %>
+</li>
+<% end %>
